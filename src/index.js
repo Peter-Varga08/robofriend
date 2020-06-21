@@ -3,16 +3,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 /* reactDOM is like the glue (??), reactNative would render to mobile phones */
 import "./index.css"; /* --> react allows you to add css files to each different component */
-import App from "./App";
-/* import { Hello } from "./Hello.js"; */
-import Hello from "./Hello.js";
 import * as serviceWorker from "./serviceWorker";
 import "tachyons";
+import CardList from "./CardList";
 
-/* with react you can have your own tags */
+/* with react you can have your own tags, like the <Card/> tag
+TODO Don't forget that you can only render 1 element, so wrap things up if u have multiple*/
 ReactDOM.render(
   <React.StrictMode>
-    <Hello greeting={`Hello React Ninja`} />
+    <CardList />
   </React.StrictMode>,
   document.getElementById("root")
 );
