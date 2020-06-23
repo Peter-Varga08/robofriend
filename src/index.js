@@ -5,13 +5,13 @@ import ReactDOM from "react-dom";
 import "./index.css"; /* --> react allows you to add css files to each different component */
 import * as serviceWorker from "./serviceWorker";
 import "tachyons";
-import CardList from "./CardList";
+import App from "./containers/App";
 
 /* with react you can have your own tags, like the <Card/> tag
 TODO Don't forget that you can only render 1 element, so wrap things up if u have multiple*/
 ReactDOM.render(
   <React.StrictMode>
-    <CardList />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,8 +1,11 @@
 import React from "react";
-import { robots } from "./robots";
 import Card from "./Card";
 
-const CardList = () => {
+/* CardList is a Pure function because it always returns the same thing */
+const CardList = ({ robots }) => {
+  /*   if (true) {
+    throw new Error("I generated this hehhe");
+  } */
   return (
     <div>
       {robots.map((robot, i) => {
